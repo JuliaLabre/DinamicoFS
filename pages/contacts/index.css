@@ -1,0 +1,69 @@
+
+ #contacts {
+    width: 100%;
+    max-width: 475px;
+    margin: auto;
+}
+
+#contacts label {
+    display: block;
+    margin: 0 0 .25rem .25rem;
+}
+
+#contacts input, #contacts textarea, #contacts button {
+    width: 100%;
+    border-radius: .3rem;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .4rem .5rem;
+}
+
+#contacts textarea {
+    height: 6rem;
+    resize: vertical;
+}
+
+#contacts button {
+    width: auto;
+    background: linear-gradient(rgb(232, 1, 232), rgb(74, 0, 74));
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 10px 0px rgba(138, 138, 138, 1);
+    cursor: pointer;
+}
+
+#contacts button:hover {
+    background: linear-gradient(rgb(255, 89, 255), rgb(139, 0, 139));
+}
+
+#contacts input:valid, #contacts textarea:valid {
+    background-color: rgb(232, 240, 254);
+    border: 1px solid rgb(85, 57, 134);
+    border-bottom: 3px solid rgb(85, 57, 134);
+}
+
+#contacts input:invalid, #contacts textarea:invalid {
+    background-color: rgb(255, 207, 207);
+    border: 1px solid rgb(146, 145, 145);
+    border-bottom: 3px solid rgb(146, 145, 145);
+}
+
+#contacts:invalid button {
+    background: linear-gradient(rgb(170, 170, 170), rgb(79, 79, 79));
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.form-error {
+    display: table;
+    margin: auto;
+    background: #e69c9c;
+    color: rgb(85, 57, 134);
+    border-radius: .5rem;
+    padding: 0 1rem;
+    font-size: .8rem;
+}
+
+.feedback {
+    display: table;
+    margin: auto;
+}
